@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/register_bg">
+
+    <!-- Register -->
+
+    <!-- First Name -->
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:hint="First Name"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#15223B" />
+
+    <TextView
+        android:id="@+id/validationFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name is required"
+        android:textColor="#FF0000"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        android:layout_marginLeft="55dp" />
+
+    <!-- Last Name -->
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="23dp"
+        android:hint="Last Name"
+        android:textColorHint="#15223B"/>
+
+    <TextView
+        android:id="@+id/validationLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name is required"
+        android:textColor="#FF0000"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        android:layout_marginLeft="55dp" />
+
+    <!-- Email Address -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColor="#FFFFFF"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="23dp"
+        android:hint="Email Address"
+        android:textColorHint="#15223B"/>
+
+    <TextView
+        android:id="@+id/validationEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email is required"
+        android:textColor="#FF0000"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        android:layout_marginLeft="55dp" />
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="23dp"
+        android:hint="Username"
+        android:textColorHint="#15223B"/>
+
+    <TextView
+        android:id="@+id/validationUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username is required"
+        android:textColor="#FF0000"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        android:layout_marginLeft="55dp" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="19dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="#15223B"/>
+
+    <TextView
+        android:id="@+id/validationPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password is required"
+        android:textColor="#FF0000"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        android:layout_marginLeft="55dp" />
+
+    <!-- Register Button -->
+    <ImageButton
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/register_button"
+        android:contentDescription="Register button"/>
+
+    <ImageButton
+        android:id="@+id/btnReg_Login"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="83dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Login button within Register page"
+        android:src="@drawable/btnreg_login" />
+
+
+</LinearLayout>

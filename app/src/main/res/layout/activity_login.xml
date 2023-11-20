@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/login_bg">
+
+    <!-- Login -->
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/editTextUsername_Login"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="300dp"
+        android:hint="Username"
+        android:textColorHint="#15223B"/>
+
+    <TextView
+        android:id="@+id/validationUsername_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username is required"
+        android:textColor="#FF0000"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        android:layout_marginLeft="55dp" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/editTextPassword_Login"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="25dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="#15223B"/>
+
+
+    <TextView
+        android:id="@+id/validationPassword_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password is required"
+        android:textColor="#FF0000"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        android:layout_marginLeft="55dp" />
+
+
+    <!-- Login Button -->
+    <ImageButton
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/login_button"
+        android:contentDescription="Login button"/>
+
+
+    <!-- Register Button -->
+    <ImageButton
+        android:id="@+id/btnLog_Register"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="165dp"
+        android:background="?android:attr/selectableItemBackground"        android:src="@drawable/btnlog_register"
+        android:contentDescription="Register button within Login page"/>
+
+
+</LinearLayout>
